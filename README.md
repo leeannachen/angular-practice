@@ -3,9 +3,7 @@
 This project was made possible by following the follow tutorial:
 Angular 8 Tutorial & Crash Course (https://coursetro.com/posts/code/174/Angular-8-Tutorial-&-Crash-Course)
 
-# MyApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
 ## Development server
 
