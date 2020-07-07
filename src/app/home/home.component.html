@@ -1,0 +1,25 @@
+<h1>Welcome</h1>
+
+<div class="play-container">
+  <!-- event bind by wrapping the name of the event in the parentheses with an element-->
+  <p>You've clicked <span (click)="countClick()">this</span> {{ clickCounter }} times. </p>
+</div>
+
+<div class="play-container">
+  <p>
+    <!-- two way data binding to receive and send information-->
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <strong>You said: </strong> {{ name }}
+  </p>
+</div>
+
+<div class="play-container" [ngClass]="setClasses()">
+  <ng-template [ngIf]="clickCounter > 3" [ngIfElse]="none">
+    <p>The click ounter is <strong> GREATER </strong> than 3.</p>
+  </ng-template>
+
+  <ng-template #none>
+    <p>The click ounter is <strong> LESS </strong> than 3.</p>
+  </ng-template>
+</div>

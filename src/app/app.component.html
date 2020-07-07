@@ -1,0 +1,17 @@
+<header>
+  <div class="container">
+    <a href="#" class="logo">AngularApp</a>
+    <nav>
+      <ul>
+        <!-- with angular, linking different compoents must use the format `routerLink=` -->
+        <li><a href="#" routerLink="/">Home</a></li>
+        <li><a href="#" routerLink="/list">Breweries</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <!-- where the routed compoent will be displayed in our component -->
+  <router-outlet></router-outlet>
+</div>
